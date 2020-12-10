@@ -6,7 +6,13 @@ namespace TestCrypto
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Crypto Test!");
+
+            var kg = new SPC.Crypto.Symmetric.AES();
+
+            Console.WriteLine(kg.GenerateKey());
+
+            Console.ReadLine();
         }
     }
 }
